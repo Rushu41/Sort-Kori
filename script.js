@@ -21,11 +21,12 @@ document.getElementById('bubblesort').addEventListener('click', function() {
     bubbleSortDivs(container);
 
     document.getElementById('mergesort').disabled = true;
+    document.getElementById('generate').disabled = true;
 });
 
 document.getElementById('mergesort').addEventListener('click', function() {
     const container = document.querySelector('.box');
     mergeSortDivs(container);
-
+    document.getElementById('generate').disabled = true;
     document.getElementById('bubblesort').disabled = true;
 });
