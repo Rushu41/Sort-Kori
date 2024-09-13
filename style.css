@@ -1,0 +1,28 @@
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.box div {
+    background-color: red;
+    height: auto;
+    margin: 1px;
+  }
+
+  @media (max-width: 768px) {
+    .box div {
+      width: 2px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .box div {
+      width: 5px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .box div {
+      width: 10px;
+    }
+  }
